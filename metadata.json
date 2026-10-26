@@ -1,0 +1,8 @@
+{
+  "name": "Unicorn Energy Calculator",
+  "description": "Solar data collection and solar sizing calculator engineered by Unicorn Group. Calculate solar panel requirements, inverter, battery bank, energy generation, and submit field surveys directly to engineering consultants.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

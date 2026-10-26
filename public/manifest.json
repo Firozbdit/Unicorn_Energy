@@ -1,0 +1,63 @@
+{
+  "id": "/",
+  "name": "Unicorn Energy Calculator",
+  "short_name": "UnicornSolar",
+  "description": "Solar PV Sizing, Appliance Audit & Site Data Collection App by Unicorn Group Bangladesh",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#064e3b",
+  "background_color": "#064e3b",
+  "categories": ["utilities", "business", "productivity"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Solar Sizing",
+      "short_name": "Sizing",
+      "description": "Calculate solar capacity, inverters & battery",
+      "url": "/#calculator",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Appliance Audit",
+      "short_name": "Audit",
+      "description": "Calculate total daily load & energy profile",
+      "url": "/#load-audit",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Field Survey Form",
+      "short_name": "Survey",
+      "description": "Submit rooftop site audit data",
+      "url": "/#survey",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "AI Solar Advisor",
+      "short_name": "AI Advisor",
+      "description": "AI feasibility analysis & recommendations",
+      "url": "/#ai-advisor",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

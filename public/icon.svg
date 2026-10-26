@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with safe zone padding for Android maskable squircle -->
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+  
+  <!-- Central Sun Rays (Safe Zone centered) -->
+  <g transform="translate(256, 210)">
+    <circle cx="0" cy="0" r="54" fill="url(#sun)"/>
+    <!-- Rays -->
+    <path d="M 0 -72 L 0 -92" stroke="#f59e0b" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 48 -48 L 62 -62" stroke="#f59e0b" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 72 0 L 92 0" stroke="#f59e0b" stroke-width="14" stroke-linecap="round"/>
+    <path d="M -48 -48 L -62 -62" stroke="#f59e0b" stroke-width="14" stroke-linecap="round"/>
+    <path d="M -72 0 L -92 0" stroke="#f59e0b" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Solar Panel Grid Symbol -->
+  <g transform="translate(136, 280)">
+    <polygon points="40,0 200,0 240,110 0,110" fill="#10b981" opacity="0.9"/>
+    <!-- Grid lines -->
+    <line x1="120" y1="0" x2="120" y2="110" stroke="#064e3b" stroke-width="6"/>
+    <line x1="20" y1="55" x2="220" y2="55" stroke="#064e3b" stroke-width="6"/>
+    <line x1="75" y1="0" x2="65" y2="110" stroke="#064e3b" stroke-width="4"/>
+    <line x1="165" y1="0" x2="175" y2="110" stroke="#064e3b" stroke-width="4"/>
+  </g>
+  
+  <!-- Text Label -->
+  <text x="256" y="445" font-family="sans-serif" font-weight="900" font-size="34" fill="#ffffff" text-anchor="middle" letter-spacing="4">UNICORN</text>
+  <text x="256" y="475" font-family="sans-serif" font-weight="700" font-size="20" fill="#f59e0b" text-anchor="middle" letter-spacing="6">ENERGY</text>
+</svg>

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+  }
+
+  /* Prevent automatic iOS zoom on focus while maintaining design hierarchy */
+  @media (max-width: 640px) {
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      font-size: 16px !important;
+    }
+  }
+}
+
+/* iOS & Android Safe Area Insets */
+.safe-area-top {
+  padding-top: max(env(safe-area-inset-top, 0px), 0.75rem);
+}
+
+.safe-area-bottom {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 0.65rem);
+}
+
+/* Touch friendly active press effect */
+.touch-press:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-break-inside-avoid {
+    break-inside: avoid;
+  }
+  body {
+    background: white !important;
+    color: #111827 !important;
+  }
+}
